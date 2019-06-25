@@ -6,17 +6,6 @@ Bandwidth Messaging applications using Google Dialogflow and Amazon Lex.
 ## How It Works
 When an incoming message is received by a Bandwidth number, a notification will be sent to your application via a callback/webhook. Your application can then take the text from the body of that message and communicate with the NLU API of your choice to have a response created. From there, your application would take that response and send it in a message back to your customer.
 
-## Web Server using ngrok
-Set up a basic Sinatra server for Bandwidth to send incoming message callbacks to. For this demo, you can simply use ngrok to expose your local development environment to the Internet. <a href="https://ngrok.com/download" target="_blank">ngrok</a> is free, and can be downloaded on all major operating systems. 
-
-Once ngrok is downloaded, run ./ngrok http 4567 on the command line to open up a web server on Sinatra's default port of 4567. You should then see a screen with several pieces of information regarding your session. Take the `Forwarding` url that is secure (ex. https://some-letters-and-letters.ngrok.io) and hang onto it for later.
-
-## Create a Bandwidth Application
-Follow the instructions <a href="https://dev.bandwidth.com/v2-messaging/applications/about.html" target="_blank">here</a> to create a Bandwidth Application and assign that application a Bandwith phone number. You can place the url for your ngrok server as the `Callback Url` for the application.
-
-
-This code builds on top of Bandwidth's Ruby SDK <a href="https://github.com/Bandwidth/ruby-bandwidth#messaging-20" target="_blank">Send SMS</a> and Google Dialogflow's <a href="https://github.com/GoogleCloudPlatform/ruby-docs-samples/blob/master/dialogflow/detect_intent_texts.rb" target="_blank">detect intent texts</a>.
-
 ## Google Dialogflow Setup
 Follow the steps <a href="https://dialogflow.com/docs/getting-started" target="_blank">here</a> to create a Google Dialogflow agent. If you don't want to build an agent from scratch, take advantage of the pre-built demo agents Google Dialogflow provides.
 
@@ -24,6 +13,14 @@ Also, follow the steps <a href="https://cloud.google.com/docs/authentication/get
 
 ## Amazon Lex Setup
 Sign into your AWS console and <a href="https://console.aws.amazon.com/lex/home?region=us-east-1#bot-create:" target="_blank">create</a> an Amazon Lex bot. You will also need to <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html" target="_blank">create a user</a> with an <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html" target="_blank">access key</a> for authentication.
+
+## Web Server using ngrok
+Set up a basic Sinatra server for Bandwidth to send incoming message callbacks to. For this demo, you can simply use ngrok to expose your local development environment to the Internet. <a href="https://ngrok.com/download" target="_blank">ngrok</a> is free, and can be downloaded on all major operating systems. 
+
+Once ngrok is downloaded, run ./ngrok http 4567 on the command line to open up a web server on Sinatra's default port of 4567. You should then see a screen with several pieces of information regarding your session. Take the `Forwarding` url that is secure (ex. https://some-letters-and-letters.ngrok.io) and hang onto it for later.
+
+## Create a Bandwidth Application
+Follow the instructions <a href="https://dev.bandwidth.com/v2-messaging/applications/about.html" target="_blank">here</a> to create a Bandwidth Application and assign that application a Bandwith phone number. You can place the url for your ngrok server as the `Callback Url` for the application.
 
 ## Environment Variables
 Before running the project, the following environmental variables need to be set:
