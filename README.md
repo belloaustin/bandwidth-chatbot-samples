@@ -37,14 +37,14 @@ BANDWIDTH_APPLICATION_ID
 
 These variables can all be found in your account at <a href="https://dashboard.bandwidth.com" target="_blank">https://dashboard.bandwidth.com</a>.
 
-### Google Dialogflow
+##### Google Dialogflow
 ```
 GOOGLE_PROJECT_ID
 ```
 
 This is the Project ID of your Google Dialogflow agent.
 
-### Amazon Lex
+##### Amazon Lex
 ```
 access_key_id
 secret_access_key
