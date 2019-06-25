@@ -37,14 +37,14 @@ BANDWIDTH_APPLICATION_ID
 
 These variables can all be found in your account at <a href="https://dashboard.bandwidth.com" target="_blank">https://dashboard.bandwidth.com</a>.
 
-##### Google Dialogflow
+#### Google Dialogflow
 ```
 GOOGLE_PROJECT_ID
 ```
 
 This is the Project ID of your Google Dialogflow agent.
 
-##### Amazon Lex
+#### Amazon Lex
 ```
 access_key_id
 secret_access_key
@@ -56,7 +56,7 @@ Follow the steps above to create a IAM User with an access key and secret access
 region
 ```
 
-Use the name of the region under the `Region` column <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#lex_region" target="_blank">here</a>
+Use the name of the region under the `Region` column <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#lex_region" target="_blank">here</a>.
 
 ```
 bot_name
