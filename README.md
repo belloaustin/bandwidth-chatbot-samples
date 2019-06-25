@@ -4,7 +4,7 @@ Bandwidth Messaging applications using Google Dialogflow and Amazon Lex.
 <a href="http://dev.bandwidth.com"><img src="https://s3.amazonaws.com/bwdemos/BW_Messaging.png"/></a>
 
 ## How It Works
-When an incoming message is received by a Bandwidth number, a notification will be sent to your application via a callback/webhook. Your application can then take the text from the body of that message and communicate with the NLU API of your choice to have a response created. From there, your application would take that response and send it in a message back to your customer.
+When an incoming message is received by a Bandwidth number, a notification will be sent to your application via a callback/webhook. Your application can then take the text from the body of that message and communicate with the NLU API of your choice to have the intent of the message deciphered and a response message crafted. Your application would then send the response message back to your customer as an SMS.
 
 ## Google Dialogflow Setup
 Follow the steps <a href="https://dialogflow.com/docs/getting-started" target="_blank">here</a> to create a Google Dialogflow agent. If you don't want to build an agent from scratch, take advantage of the pre-built demo agents Google Dialogflow provides.
